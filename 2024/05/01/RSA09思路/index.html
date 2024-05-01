@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="RSA09思路浅浅水一篇blog这是题目
+1234567891011121314151617#!/usr/bin/env python3from Crypto.Util.number import *from secret import FLAGp = getPrime(512)q = getPri"/>
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="All categories"/>
+        <meta property="og:title" content="RSA09思路"/>
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="RSA09思路浅浅水一篇blog这是题目
+1234567891011121314151617#!/usr/bin/env python3from Crypto.Util.number import *from secret import FLAGp = getPrime(512)q = getPri"/>
     
 
     <!--Open Graph Site Name-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>All categories - Hexo</title>
+    <title>RSA09思路 - Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -155,35 +161,77 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-    <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>All categories</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                <div class="archive-before-pagination"></div>
+                <div class="post-heading">
+                    <h1>RSA09思路</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by mmm on
+                        
+                        
+                            2024-05-01
+                        
+                    </span>
+                </div>
             </div>
         </div>
     </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
 
 
+<a href="/tags/UCAS-CTF/">#UCAS_CTF</a>
 
 
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="RSA09思路"><a href="#RSA09思路" class="headerlink" title="RSA09思路"></a>RSA09思路</h1><p>浅浅水一篇blog<br>这是题目</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> FLAG</span><br><span class="line"></span><br><span class="line">p = getPrime(<span class="number">512</span>)</span><br><span class="line">q = getPrime(<span class="number">512</span>)</span><br><span class="line"></span><br><span class="line">N = p * q</span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line"></span><br><span class="line">ct = <span class="built_in">pow</span>(bytes_to_long(FLAG), e, N)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>((e, N))</span><br><span class="line"><span class="built_in">print</span>((p ^ q) * (p + q))</span><br><span class="line"><span class="built_in">print</span>(ct)</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://mundi-xu.github.io/2018/11/29/A-magic-rsa-encryption-algorithm/">参考资料</a><br>稍微改一改就做出来啦(&gt;﹏&lt;)</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
 
     <!-- Footer -->
     <hr />
